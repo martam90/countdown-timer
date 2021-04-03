@@ -43,5 +43,36 @@ button {
 body {
   font-size: 0.8rem;
   font-family: "Red Hat Text", sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#191a24), to(#343650));
+  background-image: linear-gradient(to bottom, #191a24, #343650);
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/bg-stars.svg");
+  width: 100%;
+  height: 569px;
+  z-index: 99;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/pattern-hills.svg");
+  width: 100%;
+  height: 197px;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 /*# sourceMappingURL=main.css.map */
