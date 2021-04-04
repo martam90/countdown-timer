@@ -1,0 +1,54 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9rem 1.4rem 0 1.4rem;
+}
+
+.deadline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr auto;
+  gap: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.deadline__item {
+  padding: 0.5rem;
+  background-image: linear-gradient(to bottom, ($very-dark-blue), ($dark-blue));
+  border-radius: 0.5rem;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    background-color: $black-blue;
+    width: 0.9rem;
+    height: 0.5rem;
+    border-radius: 50%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    background-color: $black-blue;
+    width: 0.9rem;
+    height: 0.5rem;
+    border-radius: 50%;
+  }
+}
+
+.deadline__text {
+  text-transform: uppercase;
+  color: $grayish-blue;
+  letter-spacing: 3px;
+  font-size: 0.5rem;
+  text-align: center;
+}
