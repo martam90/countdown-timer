@@ -1,15 +1,11 @@
 'use strict';
 
-const dayItem = document.querySelector('.days');
-const hourItem = document.querySelector('.hours');
-const minuteItem = document.querySelector('.minutes');
-const secondItem = document.querySelector('.seconds');
+const items = document.querySelectorAll('.deadline__item h4');
 
 const deadline = new Date(2021, 9, 6, 24, 0);
 
 const showTime = () => {
   const time = deadline - Date.now();
-  console.log(time);
 
   // 1 day = 24 hours
   // 1 hour = 60 min
@@ -20,29 +16,24 @@ const showTime = () => {
   const oneHour = 60 * 60 * 1000;
   const oneMinute = 60 * 1000;
 
-  const days = Math.floor(time / oneDay);
-  const hours = Math.floor((time % oneDay) / oneHour);
-  const minutes = Math.floor((time % oneHour) / oneMinute);
-  const seconds = Math.floor((time % oneMinute) / 1000);
+  let days = 0;
+  let hours = 0;
+  let minutes = 0;
+  let seconds = 0;
 
-  dayItem.innerHTML = days;
-  hourItem.innerHTML = hours;
-  minuteItem.innerHTML = minutes;
-  secondItem.innerHTML = seconds;
+  if (time > 0) {
+    days = Math.floor(time / oneDay);
+    hours = Math.floor((time % oneDay) / oneHour);
+    minutes = Math.floor((time % oneHour) / oneMinute);
+    seconds = Math.floor((time % oneMinute) / 1000);
+  } else {
+    clearInterval(countdown);
+  }
 
-
-  // function format (item) {
-  //   if (item < 10) {
-  //     return item `0${item}`;
-  //   }
-  //   return item;
-  // }
-
-  // const values = [days, hours, minutes, seconds];
-  // items.forEach(function(item, index) {
-  //   item.innerHTML = format(values[index]);
-  // });
-
+  const values = [days, hours, minutes, seconds];
+  for (let i = 0; i < items.length; i++) {
+    items[i].innerHTML = String(values[i]).padStart(2, '0');
+  }
 }
 
 const countdown = setInterval(showTime, 1000);
