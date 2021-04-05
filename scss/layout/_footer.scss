@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.attribution {
+  color: $white;
+}
+
+.attribution__link {
+  color: $soft-red;
+  cursor: pointer;
+
+
+  &:focus {
+    outline: 2px dotted $white;
+  }
+}
+
+svg {
+  fill: #8385A9;
+  transition: all ease-in-out 300ms;
+  
+
+  &:hover {
+    fill: $soft-red;
+  }
+}

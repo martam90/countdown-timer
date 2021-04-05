@@ -3,7 +3,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 9rem 1.4rem 0 1.4rem;
+  padding: 9rem 1.4rem 23rem 1.4rem;
 }
 
 .deadline {
@@ -11,7 +11,6 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding-top: 4rem;
-  padding-bottom: 2rem;
 }
 
 .deadline__item {
@@ -39,7 +38,7 @@ main {
   letter-spacing: 3px;
   font-size: 0.5rem;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 0.75rem;
 }
 
 .card {

@@ -67,6 +67,8 @@ body::after {
   background-image: url("../images/pattern-hills.svg");
   width: 100%;
   height: 197px;
+  z-index: -1;
+  background-position: center right;
 }
 
 h1 {
@@ -98,7 +100,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 9rem 1.4rem 0 1.4rem;
+  padding: 9rem 1.4rem 23rem 1.4rem;
 }
 
 .deadline {
@@ -108,7 +110,6 @@ main {
       grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding-top: 4rem;
-  padding-bottom: 2rem;
 }
 
 .deadline__item {
@@ -137,7 +138,7 @@ main {
   letter-spacing: 3px;
   font-size: 0.5rem;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 0.75rem;
 }
 
 .card {
@@ -166,5 +167,49 @@ main {
   height: 0.5rem;
   border-radius: 50%;
   z-index: 99;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.attribution {
+  color: white;
+}
+
+.attribution__link {
+  color: #fb6087;
+  cursor: pointer;
+}
+
+.attribution__link:focus {
+  outline: 2px dotted white;
+}
+
+svg {
+  fill: #8385A9;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+svg:hover {
+  fill: #fb6087;
 }
 /*# sourceMappingURL=main.css.map */
