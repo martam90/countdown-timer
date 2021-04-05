@@ -1,5 +1,11 @@
-$xs: 47em;
+$med: 30em;
 $xl: 48em;
+
+@mixin med {
+  @media screen and(min-width: $med) {
+    @content;
+  }
+}
 
 @mixin xl {
   @media screen and(min-width: $xl) {

@@ -16,6 +16,12 @@ main {
   gap: 1rem;
   padding-top: 6rem;
 
+  @include med {
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    gap: 1.2rem;
+  }
+
   @include xl {
     display: grid;
     grid-template-columns: repeat(4, 9.5rem);
@@ -69,6 +75,16 @@ main {
     height: 0.5rem;
     border-radius: 50%;
     z-index: 99;
+
+    @include med {
+      top: 38%;
+      left: -5%;
+    }
+
+    @include xl {
+      top: 39%;
+      left: -3%;
+    }
   }
 
   &::before {
@@ -81,5 +97,15 @@ main {
     height: 0.5rem;
     border-radius: 50%;
     z-index: 99;
+
+    @include med {
+      top: 38%;
+      right: -5%;
+    }
+
+    @include xl {
+      top: 39%;
+      right: -3%;
+    }
   }
 }

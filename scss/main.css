@@ -141,6 +141,16 @@ main {
   padding-top: 6rem;
 }
 
+@media screen and (min-width: 30em) {
+  .deadline {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (6rem)[4];
+        grid-template-columns: repeat(4, 6rem);
+    gap: 1.2rem;
+  }
+}
+
 @media screen and (min-width: 48em) {
   .deadline {
     display: -ms-grid;
@@ -203,6 +213,20 @@ main {
   z-index: 99;
 }
 
+@media screen and (min-width: 30em) {
+  .card::after {
+    top: 38%;
+    left: -5%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .card::after {
+    top: 39%;
+    left: -3%;
+  }
+}
+
 .card::before {
   content: '';
   position: absolute;
@@ -213,6 +237,20 @@ main {
   height: 0.5rem;
   border-radius: 50%;
   z-index: 99;
+}
+
+@media screen and (min-width: 30em) {
+  .card::before {
+    top: 38%;
+    right: -5%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .card::before {
+    top: 39%;
+    right: -3%;
+  }
 }
 
 footer {
