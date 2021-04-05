@@ -190,6 +190,12 @@ main {
   padding-top: 0.75rem;
 }
 
+@media screen and (min-width: 30em) {
+  .deadline__text {
+    font-size: 0.7rem;
+  }
+}
+
 @media screen and (min-width: 48em) {
   .deadline__text {
     font-size: 0.9rem;

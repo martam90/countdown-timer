@@ -56,6 +56,10 @@ main {
   text-align: center;
   padding-top: 0.75rem;
 
+  @include med {
+    font-size: 0.7rem;
+  }
+
   @include xl {
     font-size: 0.9rem;
     padding-top: 2rem;
