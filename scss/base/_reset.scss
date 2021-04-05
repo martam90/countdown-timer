@@ -27,6 +27,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -39,4 +40,8 @@ img {
 input,
 button {
   font: inherit;
+}
+
+:focus {
+  outline: 2px dotted $white;
 }

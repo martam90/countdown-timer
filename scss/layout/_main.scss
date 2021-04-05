@@ -8,7 +8,7 @@ main {
 
 .deadline {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 4.3rem);
   gap: 1rem;
   padding-top: 4rem;
 }
@@ -47,10 +47,10 @@ main {
   &::after {
     content: '';
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: -10%;
     background-color: $black-blue;
-    width: 0.9rem;
+    width: 0.7rem;
     height: 0.5rem;
     border-radius: 50%;
     z-index: 99;
@@ -59,10 +59,10 @@ main {
   &::before {
     content: '';
     position: absolute;
-    top: 40%;
+    top: 35%;
     right: -10%;
     background-color: $black-blue;
-    width: 0.9rem;
+    width: 0.7rem;
     height: 0.5rem;
     border-radius: 50%;
     z-index: 99;
