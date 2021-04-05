@@ -76,6 +76,12 @@ body::after {
   background-position: center right;
 }
 
+@media screen and (min-width: 48em) {
+  body::after {
+    background-position: unset;
+  }
+}
+
 h1 {
   color: white;
   text-transform: uppercase;
@@ -84,11 +90,23 @@ h1 {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 48em) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
 h4 {
   color: #fb6087;
   font-size: 2rem;
   text-align: center;
   position: relative;
+}
+
+@media screen and (min-width: 48em) {
+  h4 {
+    font-size: 5rem;
+  }
 }
 
 main {
@@ -108,13 +126,29 @@ main {
   padding: 9rem 1.4rem 23rem 1.4rem;
 }
 
+@media screen and (min-width: 48em) {
+  main {
+    padding: 8.2rem 1.4rem 16rem 1.4rem;
+  }
+}
+
 .deadline {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (4.3rem)[4];
       grid-template-columns: repeat(4, 4.3rem);
   gap: 1rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
+}
+
+@media screen and (min-width: 48em) {
+  .deadline {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (9.5rem)[4];
+        grid-template-columns: repeat(4, 9.5rem);
+    gap: 1.75rem;
+  }
 }
 
 .deadline__item {
@@ -144,6 +178,13 @@ main {
   font-size: 0.5rem;
   text-align: center;
   padding-top: 0.75rem;
+}
+
+@media screen and (min-width: 48em) {
+  .deadline__text {
+    font-size: 0.9rem;
+    padding-top: 2rem;
+  }
 }
 
 .card {

@@ -1,0 +1,8 @@
+$xs: 47em;
+$xl: 48em;
+
+@mixin xl {
+  @media screen and(min-width: $xl) {
+    @content;
+  }
+}

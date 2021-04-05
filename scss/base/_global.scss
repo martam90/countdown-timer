@@ -25,6 +25,10 @@ body {
     height: 197px;
     z-index: -1;
     background-position: center right;
+
+    @include xl {
+      background-position: unset;
+    }
   }
 }
 
@@ -34,6 +38,10 @@ h1 {
   letter-spacing: 3px;
   text-align: center;
   font-size: 1.2rem;
+
+  @include xl {
+    font-size: 1.5rem;
+  }
 }
 
 h4 {
@@ -41,5 +49,9 @@ h4 {
   font-size: 2rem;
   text-align: center;
   position: relative;
+
+  @include xl {
+    font-size: 5rem;
+  }
 }
 
