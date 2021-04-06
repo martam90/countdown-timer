@@ -2,7 +2,8 @@
 
 const items = document.querySelectorAll('.deadline__item h4');
 
-const deadline = new Date(2021, 9, 6, 24, 0);
+const heading = document.querySelector('.heading');
+const deadline = new Date(2021, 6, 6, 24, 0);
 
 const showTime = () => {
   const time = deadline - Date.now();
@@ -28,6 +29,7 @@ const showTime = () => {
     seconds = Math.floor((time % oneMinute) / 1000);
   } else {
     clearInterval(countdown);
+    heading.textContent = `We have just launched`;
   }
 
   const values = [days, hours, minutes, seconds];
