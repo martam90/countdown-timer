@@ -1,9 +1,13 @@
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
-@import 'base/reset';
-@import 'base/global';
-@import 'layout/main';
-@import 'layout/footer';
+@use 'abstracts';
+@use 'base';
+@use 'layout';
+
+// @import 'abstracts/mixins';
+// @import 'abstracts/variables';
+// @import 'base/reset';
+// @import 'base/global';
+// @import 'layout/main';
+// @import 'layout/footer';
 
 
 
