@@ -46,14 +46,14 @@ h1 {
   }
 }
 
-h4 {
+.deadline__number {
   color: #fb6087;
   font-size: 2rem;
   text-align: center;
   position: relative;
 }
 @media screen and (min-width: 48em) {
-  h4 {
+  .deadline__number {
     font-size: 5rem;
   }
 }
