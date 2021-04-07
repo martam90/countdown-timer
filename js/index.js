@@ -1,6 +1,6 @@
 'use strict';
 
-const items = document.querySelectorAll('.deadline__item h4');
+const items = document.querySelectorAll('.deadline__item p');
 
 const heading = document.querySelector('.heading');
 const deadline = new Date(2021, 6, 6, 24, 0);
